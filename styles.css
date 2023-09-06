@@ -2,6 +2,11 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-image: url('images/fundo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 header {
@@ -30,11 +35,13 @@ h1 {
 }
 
 main {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.75); 
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 20px;
+    backdrop-filter: blur(10px);
 }
+
 
 footer {
     background-color: #333;
@@ -92,4 +99,10 @@ input[type="submit"] {
 .nav-link:hover {
     background-color: #555; /* Cor de fundo ao passar o mouse sobre os links */
     border-radius: 5px; /* Borda arredondada nos links ao passar o mouse */
+}
+
+.card-img-custom {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Para manter a proporção da imagem e cortá-la para caber no espaço definido */
 }
