@@ -5,8 +5,9 @@ body {
 }
 
 header {
-    padding: 20px 0;
-    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 h1 {
@@ -17,6 +18,7 @@ h1 {
 .navbar {
     background-color: #333;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
